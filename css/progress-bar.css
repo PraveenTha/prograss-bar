@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.progress-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.progress-img {
+  margin-top: 35px;
+  position: relative;
+  overflow: visible;
+}
+
+img.bar-img {
+  width: 100%;
+  height: 40px;
+}
+
+.bone {
+  position: absolute;
+  width: 4%;
+  top: -41%;
+  transition: all ease-in-out 0.5s;
+}
+.bone img {
+  height: 95px;
+}
+
+.button {
+  margin-top: 55px;
+  text-align: center;
+}
+
+.btn {
+  border: 1px solid;
+}
+
+@media (max-width: 1367px) {
+  .bone {
+    top: -70%;
+  }
+}
+
+@media (max-width: 1025px) {
+  .bone {
+    top: -50%;
+  }
+}
+
+@media (max-width: 991px) {
+  img.bar-img {
+    height: 25px;
+  }
+  ul.progress-list.step-labels li {
+    font-size: 8px;
+  }
+  .bone {
+    top: -68%;
+  }
+  .bone img {
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bone {
+    top: -70%;
+  }
+  .bone.marker img {
+    width: 16px;
+    height: 45px;
+  }
+  ul.progress-list.step-labels li {
+    font-size: 6px;
+  }
+  img.bar-img {
+    height: 18px;
+  }
+}
+
+@media (max-width: 580px) {
+  .progress-bar-wrapper {
+    overflow-x: auto;
+  }
+}
